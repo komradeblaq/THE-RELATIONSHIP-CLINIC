@@ -11,20 +11,21 @@
       const country = document.getElementById('country').value;
       const status = document.getElementById('status').value;
       const question = document.getElementById('question').value;
-
       const message = `Name: ${name}\nCountry: ${country}\nRelationship Status: ${status}\nQuestion: ${question}`;
       const phone = "+2349060166133";
       const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-
       window.open(url, '_blank');
     }
   </script>
 </head>
 <body>
 
-<header>
-  <a href="index.html"><img src="image/logo.png" alt="THE RELATIONSHIP CLINIC Logo"></a>
-  <nav>
+<header class="header">
+  <div class="logo-name">
+    <img src="image/logo.png" alt="TRC Logo" class="logo">
+    <h1 class="site-title">THE RELATIONSHIP CLINIC (TRC)</h1>
+  </div>
+  <nav class="nav">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="teachings.html">Teachings</a>
@@ -34,54 +35,49 @@
   </nav>
 </header>
 
-<div class="container">
-  <div class="card">
-    <h2>Ask a Question</h2>
-    <form onsubmit="sendWhatsAppMessage(event)">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+<section class="container contact-card">
+  <h2>Ask a Question</h2>
+  <form onsubmit="sendWhatsAppMessage(event)">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
 
-      <label for="country">Country:</label>
-      <select id="country" name="country" required>
-        <option value="">Select Your Country</option>
-        <option value="Nigeria">Nigeria</option>
-        <option value="Ghana">Ghana</option>
-        <option value="Kenya">Kenya</option>
-        <option value="South Africa">South Africa</option>
-        <option value="USA">USA</option>
-        <option value="UK">UK</option>
-        <option value="Canada">Canada</option>
-        <option value="Other">Other</option>
-      </select>
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+      <option value="">Select Your Country</option>
+      <option value="Nigeria">Nigeria</option>
+      <option value="Ghana">Ghana</option>
+      <option value="Kenya">Kenya</option>
+      <option value="South Africa">South Africa</option>
+      <option value="USA">USA</option>
+      <option value="UK">UK</option>
+      <option value="Canada">Canada</option>
+      <option value="Other">Other</option>
+    </select>
 
-      <label for="status">Relationship Status:</label>
-      <select id="status" name="status" required>
-        <option value="">Select Status</option>
-        <option value="Single">Single</option>
-        <option value="In a Relationship">In a Relationship</option>
-        <option value="Engaged">Engaged</option>
-        <option value="Married">Married</option>
-        <option value="Separated">Separated</option>
-        <option value="Divorced">Divorced</option>
-      </select>
+    <label for="status">Relationship Status:</label>
+    <select id="status" name="status" required>
+      <option value="">Select Status</option>
+      <option value="Single">Single</option>
+      <option value="In a Relationship">In a Relationship</option>
+      <option value="Engaged">Engaged</option>
+      <option value="Married">Married</option>
+      <option value="Separated">Separated</option>
+      <option value="Divorced">Divorced</option>
+    </select>
 
-      <label for="question">Your Question:</label>
-      <textarea id="question" name="question" rows="5" required></textarea>
+    <label for="question">Your Question:</label>
+    <textarea id="question" name="question" rows="5" placeholder="Type your question here..." required></textarea>
 
-      <button type="submit" class="buy-button">Submit</button>
-    </form>
-  </div>
-</div>
+    <button type="submit" class="submit-button">Submit</button>
+  </form>
+</section>
 
-<footer style="background:#4B0082; color:#fff; padding:20px; text-align:center; margin-top:30px;">
+<footer>
+  <p><strong>Contact Us:</strong> <a href="tel:+2349060166133">+234 906 016 6133</a> | 
+     <a href="mailto:udjaneanyim@gmail.com">udjaneanyim@gmail.com</a></p>
   <p>
-    <strong>Contact Us:</strong>
-    <a href="tel:+2349060166133" style="color:#FFD700; text-decoration:none;">+234 906 016 6133</a> |
-    <a href="mailto:udjaneanyim@gmail.com" style="color:#FFD700; text-decoration:none;">udjaneanyim@gmail.com</a>
-  </p>
-  <p>
-    <a href="https://chat.whatsapp.com/B5AoRjJ9Fd1DAfIZpSRTqX" target="_blank" style="color:#FFD700; text-decoration:none; margin-right:15px;">WhatsApp Group</a>
-    <a href="https://www.facebook.com/share/1GtAcSniRW/" target="_blank" style="color:#FFD700; text-decoration:none;">Facebook</a>
+    <a href="https://chat.whatsapp.com/B5AoRjJ9Fd1DAfIZpSRTqX" target="_blank">WhatsApp Group</a> |
+    <a href="https://www.facebook.com/share/1GtAcSniRW/" target="_blank">Facebook</a>
   </p>
   <p>&copy; 2026 THE RELATIONSHIP CLINIC. All rights reserved.</p>
 </footer>
