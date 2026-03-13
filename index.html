@@ -4,12 +4,88 @@
   <title>THE RELATIONSHIP CLINIC - Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Logo + Site Title */
+    .logo-name {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .site-title {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #FF4500; /* burnt orange */
+    }
+
+    /* Mobile Nav Toggle */
+    .nav-toggle {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #fff;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #FFD700;
+      color: #4B0082;
+    }
+
+    nav a.active {
+      background-color: #FFD700;
+      color: #4B0082;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .nav-toggle {
+        display: block;
+      }
+
+      nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      nav.show {
+        display: flex;
+      }
+
+      nav a {
+        margin: 5px 0;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<header>
-  <a href="index.html"><img src="image/logo.png" alt="THE RELATIONSHIP CLINIC Logo"></a>
-  <nav>
+<header style="background:#4B0082; color:#fff; padding:10px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;">
+  <div class="logo-name">
+    <a href="index.html"><img src="image/logo.png" alt="THE RELATIONSHIP CLINIC Logo" style="width:60px;"></a>
+    <span class="site-title">THE RELATIONSHIP CLINIC</span>
+  </div>
+  <span class="nav-toggle" onclick="toggleNav()">☰</span>
+  <nav id="nav-menu">
     <a href="index.html" class="active">Home</a>
     <a href="about.html">About</a>
     <a href="teachings.html">Teachings</a>
@@ -81,6 +157,13 @@
   </p>
   <p>&copy; 2026 THE RELATIONSHIP CLINIC. All rights reserved.</p>
 </footer>
+
+<script>
+  function toggleNav() {
+    const nav = document.getElementById('nav-menu');
+    nav.classList.toggle('show');
+  }
+</script>
 
 </body>
 </html>
