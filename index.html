@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>THE RELATIONSHIP CLINIC - Home</title>
+  <title>THE RELATIONSHIP CLINIC (TRC)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <a href="index.html"><img src="image/logo.png" alt="THE RELATIONSHIP CLINIC Logo"></a>
-  <nav>
+<header class="header">
+  <div class="logo-name">
+    <img src="image/logo.png" alt="TRC Logo" class="logo">
+    <h1 class="site-title">THE RELATIONSHIP CLINIC (TRC)</h1>
+  </div>
+  <nav class="nav">
     <a href="index.html" class="active">Home</a>
     <a href="about.html">About</a>
     <a href="teachings.html">Teachings</a>
@@ -19,65 +22,40 @@
   </nav>
 </header>
 
-<div class="container">
+<section class="hero">
+  <div class="hero-text">
+    <h2>Welcome to THE RELATIONSHIP CLINIC</h2>
+    <p>Prescription for healthy courtship.<br>
+       Therapy for thriving marriages.<br>
+       Love without regrets starts here.</p>
+  </div>
+  <img src="image/hero.jpg" alt="Relationship Clinic Hero Image" class="hero-image">
+</section>
 
-  <!-- HERO BANNER -->
-  <div class="card">
-    <img src="image/hero.jpg" alt="THE RELATIONSHIP CLINIC Banner" class="hero">
-    <h1 style="text-align:center; margin-top:15px;">Welcome to THE RELATIONSHIP CLINIC</h1>
-    <p style="text-align:center; font-size:1.1rem;">Prescription for healthy courtship. Therapy for thriving marriages. Love without regrets starts here.</p>
-    <div style="text-align:center; margin-top:15px;">
-      <a href="https://chat.whatsapp.com/B5AoRjJ9Fd1DAfIZpSRTqX" target="_blank" class="buy-button">Join WhatsApp Group</a>
-      <a href="https://selar.com/m/jane-ndubueze1" target="_blank" class="buy-button">Buy Book</a>
+<section class="latest-videos container">
+  <h2>Latest Teachings</h2>
+  <div class="videos-grid">
+    <div class="video-card">
+      <video controls>
+        <source src="image/are_you_ready_for_a_relationship.mp4" type="video/mp4">
+      </video>
+      <h3>Are You Ready for a Relationship?</h3>
+    </div>
+    <div class="video-card">
+      <video controls>
+        <source src="image/red_flags_you_should_not_ignore.mp4" type="video/mp4">
+      </video>
+      <h3>Red Flags You Should Not Ignore</h3>
     </div>
   </div>
+</section>
 
-  <!-- FEATURES SECTION -->
-  <div class="card">
-    <h2 style="text-align:center;">What We Offer</h2>
-    <div style="display:flex; flex-wrap:wrap; justify-content:space-around; gap:20px; margin-top:20px;">
-      <div style="flex:1 1 250px; background:#f0f0f0; padding:15px; border-radius:10px; text-align:center;">
-        <h3>Healthy Courtship</h3>
-        <p>Learn how to start relationships the right way, avoid heartbreak, and grow meaningful connections.</p>
-      </div>
-      <div style="flex:1 1 250px; background:#f0f0f0; padding:15px; border-radius:10px; text-align:center;">
-        <h3>Marriage Therapy</h3>
-        <p>Get guidance for thriving marriages, solving conflicts, and building long-lasting love.</p>
-      </div>
-      <div style="flex:1 1 250px; background:#f0f0f0; padding:15px; border-radius:10px; text-align:center;">
-        <h3>Love Without Regrets</h3>
-        <p>Learn practical steps to maintain healthy relationships, avoid mistakes, and flourish emotionally.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- LATEST TEACHINGS PREVIEW -->
-  <div class="card">
-    <h2 style="text-align:center;">Latest Teachings</h2>
-    <div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin-top:15px;">
-      <div style="flex:1 1 300px;">
-        <h3>Are You Ready for a Relationship?</h3>
-        <video src="image/are_you_ready_for_a_relationship.mp4" controls></video>
-      </div>
-      <div style="flex:1 1 300px;">
-        <h3>Red Flags You Should Not Ignore</h3>
-        <video src="image/red_flags_you_should_not_ignore.mp4" controls></video>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-<!-- FOOTER -->
-<footer style="background:#4B0082; color:#fff; padding:20px; text-align:center; margin-top:30px;">
+<footer>
+  <p><strong>Contact Us:</strong> <a href="tel:+2349060166133">+234 906 016 6133</a> | 
+     <a href="mailto:udjaneanyim@gmail.com">udjaneanyim@gmail.com</a></p>
   <p>
-    <strong>Contact Us:</strong>
-    <a href="tel:+2349060166133" style="color:#FFD700; text-decoration:none;">+234 906 016 6133</a> |
-    <a href="mailto:udjaneanyim@gmail.com" style="color:#FFD700; text-decoration:none;">udjaneanyim@gmail.com</a>
-  </p>
-  <p>
-    <a href="https://chat.whatsapp.com/B5AoRjJ9Fd1DAfIZpSRTqX" target="_blank" style="color:#FFD700; text-decoration:none; margin-right:15px;">WhatsApp Group</a>
-    <a href="https://www.facebook.com/share/1GtAcSniRW/" target="_blank" style="color:#FFD700; text-decoration:none;">Facebook</a>
+    <a href="https://chat.whatsapp.com/B5AoRjJ9Fd1DAfIZpSRTqX" target="_blank">WhatsApp Group</a> |
+    <a href="https://www.facebook.com/share/1GtAcSniRW/" target="_blank">Facebook</a>
   </p>
   <p>&copy; 2026 THE RELATIONSHIP CLINIC. All rights reserved.</p>
 </footer>
