@@ -1,81 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>THE RELATIONSHIP CLINIC</title>
-<link rel="stylesheet" href="style.css">
+  <title>THE RELATIONSHIP CLINIC - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { font-family: Arial, sans-serif; background: #f5f5f5; margin:0; padding:0; }
+    .container { max-width: 1200px; margin:0 auto; padding:20px; }
+    header { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; padding:10px 20px; background-color:#4B0082; }
+    header img { height:60px; }
+    header nav a { color:#fff; margin:0 10px; text-decoration:none; font-weight:bold; }
+    .hero { width:100%; border-radius:10px; margin-bottom:20px; }
+    .card { background:#fff; padding:20px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1); margin-bottom:20px; }
+    @media(max-width:768px){
+      header { flex-direction:column; align-items:flex-start; }
+      header nav { width:100%; margin-top:10px; }
+      header nav a { display:block; margin:5px 0; }
+      .container { padding:10px; }
+      .card { padding:15px; }
+    }
+  </style>
 </head>
 <body>
 
 <header>
-<h1>THE RELATIONSHIP CLINIC</h1>
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="teachings.html">Teachings</a>
-<a href="marriage-class.html">Marriage Class</a>
-<a href="books.html">Books</a>
-<a href="contact.html">Ask a Question</a>
-</nav>
+  <a href="index.html"><img src="image/logo.png" alt="THE RELATIONSHIP CLINIC Logo"></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="teachings.html">Teachings</a>
+    <a href="marriage-class.html">Marriage Class</a>
+    <a href="books.html">Books</a>
+    <a href="contact.html">Ask a Question</a>
+  </nav>
 </header>
 
-<section class="hero">
-<h2>Welcome to THE RELATIONSHIP CLINIC (TRC)</h2>
-<p>Prescription for Healthy Courtship<br>Therapy for Thriving Marriages<br>Love Without Regrets Starts Here</p>
-<a class="btn" href="https://chat.whatsapp.com/B5AoRjJ9Fd1DAfIZpSRTqX">Join WhatsApp Community</a>
-</section>
-
 <div class="container">
-<h2>About the Founder</h2>
-<div class="about">
-<img src="image/jane.jpg" alt="Jane Ndubueze">
-<div>
-<h3>Jane Udochukwu-Ndubueze</h3>
-<p>International marriage counsellor, singles coach, and author helping people build healthy relationships.</p>
-<a class="btn" href="about.html">Read Full Profile</a>
+  <img src="image/hero.jpg" alt="THE RELATIONSHIP CLINIC Banner" class="hero">
+  <div class="card">
+    <h1>Welcome to THE RELATIONSHIP CLINIC</h1>
+    <p>Prescription for healthy courtship. Therapy for thriving marriages. Love without regrets starts here.</p>
+  </div>
 </div>
-</div>
-</div>
-
-<div class="container">
-<h2>Latest Teachings</h2>
-<div class="video-grid">
-
-<div class="card">
-<h3>Healthy Courtship</h3>
-<video controls>
-  <source src="image/teaching1.mp4" type="video/mp4">
-</video>
-</div>
-
-<div class="card">
-<h3>Signs of a Healthy Relationship</h3>
-<video controls>
-  <source src="image/teaching2.mp4" type="video/mp4">
-</video>
-</div>
-
-<div class="card">
-<h3>Are You Ready for a Relationship?</h3>
-<video controls>
-  <source src="image/are_you_ready_for_a_relationship.mp4" type="video/mp4">
-</video>
-</div>
-
-<div class="card">
-<h3>Red Flags You Should Not Ignore</h3>
-<video controls>
-  <source src="image/red_flags_you_should_not_ignore.mp4" type="video/mp4">
-</video>
-</div>
-
-</div>
-</div>
-
-<footer>
-<p>Phone: +234 906 016 6133</p>
-<p>Email: udjaneanyim@gmail.com</p>
-<a href="https://www.facebook.com/share/1GtAcSniRW/">Facebook Page</a>
-</footer>
 
 </body>
 </html>
