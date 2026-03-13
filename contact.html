@@ -4,6 +4,21 @@
   <title>Ask a Question - THE RELATIONSHIP CLINIC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script>
+    function sendWhatsAppMessage(event) {
+      event.preventDefault();
+      const name = document.getElementById('name').value;
+      const country = document.getElementById('country').value;
+      const status = document.getElementById('status').value;
+      const question = document.getElementById('question').value;
+
+      const message = `Name: ${name}\nCountry: ${country}\nRelationship Status: ${status}\nQuestion: ${question}`;
+      const phone = "+2349060166133";
+      const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+      window.open(url, '_blank');
+    }
+  </script>
 </head>
 <body>
 
@@ -22,20 +37,50 @@
 <div class="container">
   <div class="card">
     <h2>Ask a Question</h2>
-    <form action="https://wa.me/+2349060166133" method="get" target="_blank">
-      <input type="text" name="name" placeholder="Your Name" required><br><br>
-      <input type="text" name="country" placeholder="Country" required><br><br>
-      <input type="text" name="status" placeholder="Relationship Status" required><br><br>
-      <textarea name="question" placeholder="Your Question" required></textarea><br><br>
-      <button type="submit" class="buy-button">Send to WhatsApp</button>
+    <form onsubmit="sendWhatsAppMessage(event)">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="country">Country:</label>
+      <select id="country" name="country" required>
+        <option value="">Select Your Country</option>
+        <option value="Nigeria">Nigeria</option>
+        <option value="Ghana">Ghana</option>
+        <option value="Kenya">Kenya</option>
+        <option value="South Africa">South Africa</option>
+        <option value="USA">USA</option>
+        <option value="UK">UK</option>
+        <option value="Canada">Canada</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="status">Relationship Status:</label>
+      <select id="status" name="status" required>
+        <option value="">Select Status</option>
+        <option value="Single">Single</option>
+        <option value="In a Relationship">In a Relationship</option>
+        <option value="Engaged">Engaged</option>
+        <option value="Married">Married</option>
+        <option value="Separated">Separated</option>
+        <option value="Divorced">Divorced</option>
+      </select>
+
+      <label for="question">Your Question:</label>
+      <textarea id="question" name="question" rows="5" required></textarea>
+
+      <button type="submit" class="buy-button">Submit</button>
     </form>
   </div>
 </div>
 
 <footer style="background:#4B0082; color:#fff; padding:20px; text-align:center; margin-top:30px;">
-  <p><strong>Contact Us:</strong> +234 906 016 6133 | <a href="mailto:udjaneanyim@gmail.com" style="color:#FFD700; text-decoration:none;">udjaneanyim@gmail.com</a></p>
   <p>
-    <a href="https://chat.whatsapp.com/B5AoRjJ9Fd1DAfIZpSRTq" target="_blank" style="color:#FFD700; text-decoration:none; margin-right:15px;">WhatsApp Group</a>
+    <strong>Contact Us:</strong>
+    <a href="tel:+2349060166133" style="color:#FFD700; text-decoration:none;">+234 906 016 6133</a> |
+    <a href="mailto:udjaneanyim@gmail.com" style="color:#FFD700; text-decoration:none;">udjaneanyim@gmail.com</a>
+  </p>
+  <p>
+    <a href="https://chat.whatsapp.com/B5AoRjJ9Fd1DAfIZpSRTqX" target="_blank" style="color:#FFD700; text-decoration:none; margin-right:15px;">WhatsApp Group</a>
     <a href="https://www.facebook.com/share/1GtAcSniRW/" target="_blank" style="color:#FFD700; text-decoration:none;">Facebook</a>
   </p>
   <p>&copy; 2026 THE RELATIONSHIP CLINIC. All rights reserved.</p>
