@@ -116,14 +116,31 @@
       color: #4B0082;
     }
 
+    /* MOBILE ADJUSTMENTS */
     @media (max-width: 768px) {
       .form-row {
         flex-direction: column;
+        gap: 8px; /* smaller gap on mobile */
+      }
+
+      .card {
+        padding: 15px; /* smaller padding on mobile */
+        margin: 10px;
       }
 
       nav {
         flex-direction: column;
         width: 100%;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+      }
+
+      button.buy-button {
+        padding: 8px;
+        font-size: 0.95rem;
       }
     }
   </style>
